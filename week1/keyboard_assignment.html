@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Keyboard - Flexbox</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f7b8c4 0%, #fbd39a 50%, #fce9c0 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  .keyboard-wrap {
+    padding: 30px 40px 40px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #c9962f;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 0 #a97b1f;
+    margin: 0 0 20px 0;
+  }
+
+  .keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 1500px;
+    max-width: 92vw;
+  }
+
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .key {
+    flex: 1 1 0;
+    background: #f2d9c9;
+    border-radius: 10px;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.15), 0 0 12px rgba(230,190,60,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #222;
+    padding: 18px 0;
+    user-select: none;
+  }
+
+  /* wide keys: flex-grow controls relative width */
+  .w1_5 { flex-grow: 1.5; }
+  .w2   { flex-grow: 2; }
+  .w2_5 { flex-grow: 2.5; }
+  .space { flex-grow: 8; }
+</style>
+</head>
+<body>
+
+<div class="keyboard-wrap">
+  <h1>KEYBOARD</h1>
+
+  <div class="keyboard">
+
+    <!-- Row 1: Function keys -->
+    <div class="row">
+      <div class="key">Esc</div>
+      <div class="key">F1</div>
+      <div class="key">F2</div>
+      <div class="key">F3</div>
+      <div class="key">F4</div>
+      <div class="key">F5</div>
+      <div class="key">F6</div>
+      <div class="key">F7</div>
+      <div class="key">F8</div>
+      <div class="key">F9</div>
+      <div class="key">F10</div>
+      <div class="key">F11</div>
+      <div class="key">F12</div>
+      <div class="key">Inspect</div>
+      <div class="key w1_5">printScr</div>
+      <div class="key">Delete</div>
+    </div>
+
+    <!-- Row 2: Numbers -->
+    <div class="row">
+      <div class="key">~</div>
+      <div class="key">1</div>
+      <div class="key">2</div>
+      <div class="key">3</div>
+      <div class="key">4</div>
+      <div class="key">5</div>
+      <div class="key">6</div>
+      <div class="key">7</div>
+      <div class="key">8</div>
+      <div class="key">9</div>
+      <div class="key">10</div>
+      <div class="key">-</div>
+      <div class="key">=</div>
+      <div class="key w2">Backspace</div>
+      <div class="key">Home</div>
+    </div>
+
+    <!-- Row 3: QWERTY -->
+    <div class="row">
+      <div class="key w1_5">Tab</div>
+      <div class="key">Q</div>
+      <div class="key">W</div>
+      <div class="key">E</div>
+      <div class="key">R</div>
+      <div class="key">T</div>
+      <div class="key">Y</div>
+      <div class="key">U</div>
+      <div class="key">I</div>
+      <div class="key">O</div>
+      <div class="key">P</div>
+      <div class="key">{</div>
+      <div class="key">}</div>
+      <div class="key">\</div>
+      <div class="key">Pg Up</div>
+    </div>
+
+    <!-- Row 4: ASDF -->
+    <div class="row">
+      <div class="key w2">Caps Lock</div>
+      <div class="key">A</div>
+      <div class="key">S</div>
+      <div class="key">D</div>
+      <div class="key">F</div>
+      <div class="key">G</div>
+      <div class="key">H</div>
+      <div class="key">I</div>
+      <div class="key">J</div>
+      <div class="key">K</div>
+      <div class="key">L</div>
+      <div class="key">;</div>
+      <div class="key">"</div>
+      <div class="key w2">Enter</div>
+      <div class="key">Pg Dn</div>
+    </div>
+
+    <!-- Row 5: ZXCV -->
+    <div class="row">
+      <div class="key w2_5">Shift</div>
+      <div class="key">Z</div>
+      <div class="key">X</div>
+      <div class="key">C</div>
+      <div class="key">V</div>
+      <div class="key">B</div>
+      <div class="key">N</div>
+      <div class="key">M</div>
+      <div class="key">&gt;</div>
+      <div class="key">&gt;</div>
+      <div class="key">?</div>
+      <div class="key w2_5">Shift</div>
+      <div class="key">&uarr;</div>
+      <div class="key">End</div>
+    </div>
+
+    <!-- Row 6: Bottom row -->
+    <div class="row">
+      <div class="key">Ctrl</div>
+      <div class="key">Fn</div>
+      <div class="key">Win</div>
+      <div class="key">Alt</div>
+      <div class="key space">space</div>
+      <div class="key">Alt</div>
+      <div class="key">Fn</div>
+      <div class="key">Ctrl</div>
+      <div class="key">&larr;</div>
+      <div class="key">&darr;</div>
+      <div class="key">&rarr;</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
