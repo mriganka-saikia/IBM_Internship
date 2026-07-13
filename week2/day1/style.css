@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#logo {
+    /* border: 1px solid red; */
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#menu {
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#menu>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#banner {
+    width: 100%;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+#banner>div {
+    /* border:1px solid blue; */
+    width: 48%;
+    text-align: center;
+}
+
+
+#child1>h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+#child1>h1>span {
+    color: yellowgreen;
+}
+
+
+#grid {
+    width: 100%;
+    display: grid;
+    margin: auto;
+    gap: 50px;
+    text-align: center;
+    margin-top: 50px;
+
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#grid div {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+                rgba(0, 0, 0, 0.06) 0px 2px 1px,
+                rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(0, 0, 0, 0.09) 0px 8px 4px,
+                rgba(0, 0, 0, 0.09) 0px 16px 8px,
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#grid:hover img {
+    transform: scale(2.5);
+    transition: 0.5s;
+}
+
+#price {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#price>div>button {
+    padding: 10px 10px;
+    background-color: teal;
+    color: white;
+    border: none;
+}
+
+#price>div {
+    width: 25%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#price>div>h2 {
+    font-size: 30px;
+    color: rgb(161, 29, 29);
+}
+
+#price>div>h3 {
+    font-size: 40px;
+    color: teal;
+}
+
+#price > div:hover {
+    transform: translateY(-10px);
+}
+
+
+
+button:hover {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.page-heading{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.page-heading h1{
+    font-size: 50px;
+    color: teal;
+}
+
+.about-content{
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#services{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#services > div{
+    width: 25%;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#contact{
+    width: 40%;
+    margin: 50px auto;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input,
+#contact textarea{
+    padding: 15px;
+}
+
+#contact button{
+    padding: 15px;
+    background-color: teal;
+    color: white;
+    border: none;
+}
+
+#catalog{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.car{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.car img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car h3{
+    color: teal;
+    font-size: 25px;
+}
+
+.car button{
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+}
+
+.car:hover{
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
+
+footer{
+    background-color: rgb(16, 73, 68);
+    color: white;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+#footer-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-main > div{
+    width: 20%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+#subscribe{
+    width: 30%;
+}
+
+#subscribe input{
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+}
+
+#subscribe button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: yellowgreen;
+}
+
+#footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}

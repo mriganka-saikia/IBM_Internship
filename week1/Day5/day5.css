@@ -1,4 +1,4 @@
-#parent{
+.parent{
     border: 1px solid black;
     width: 600px;
     margin: 0 auto;
@@ -8,7 +8,7 @@
     gap: 10px;
 }
 
-#parent > div{
+.parent > div{
     background: rgb(166,255,0);
     display: flex;
     justify-content: center;
